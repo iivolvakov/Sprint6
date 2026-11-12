@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class OrderConfirmation {
-    private  WebDriver driver;
     private  WebDriverWait wait;
 
     private  By confirmButton = By.xpath("//button[normalize-space()='Да']");
@@ -16,7 +15,6 @@ public class OrderConfirmation {
     private  By successMessage = By.cssSelector(".Order_ModalHeader__3FDaJ");
 
     public OrderConfirmation(WebDriver driver) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
