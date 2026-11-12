@@ -7,10 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class FaqPage {
-    private WebDriver driver;
     private final WebDriverWait wait;
     public FaqPage(WebDriver driver) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
     public void clickQuestion(int index) {
